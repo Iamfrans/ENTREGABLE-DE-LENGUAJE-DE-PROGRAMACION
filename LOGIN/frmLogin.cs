@@ -19,7 +19,7 @@ namespace LOGIN
 
         private void LOGIN_Load(object sender, EventArgs e)
         {
-            hhhhh
+
         }
     }
 }

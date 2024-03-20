@@ -33,8 +33,6 @@
             this.textUsername = new System.Windows.Forms.TextBox();
             this.textpassword = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textComPassword = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.checkBxShowPas = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -95,32 +93,12 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Password";
             // 
-            // textComPassword
-            // 
-            this.textComPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.textComPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textComPassword.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textComPassword.Location = new System.Drawing.Point(33, 293);
-            this.textComPassword.Multiline = true;
-            this.textComPassword.Name = "textComPassword";
-            this.textComPassword.Size = new System.Drawing.Size(216, 28);
-            this.textComPassword.TabIndex = 6;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(30, 273);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(120, 17);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Confirm password";
-            // 
             // checkBxShowPas
             // 
             this.checkBxShowPas.AutoSize = true;
             this.checkBxShowPas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBxShowPas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBxShowPas.Location = new System.Drawing.Point(127, 327);
+            this.checkBxShowPas.Location = new System.Drawing.Point(130, 254);
             this.checkBxShowPas.Name = "checkBxShowPas";
             this.checkBxShowPas.Size = new System.Drawing.Size(119, 21);
             this.checkBxShowPas.TabIndex = 7;
@@ -134,11 +112,11 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(33, 366);
+            this.button1.Location = new System.Drawing.Point(36, 293);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(216, 35);
             this.button1.TabIndex = 8;
-            this.button1.Text = "REGISTER";
+            this.button1.Text = "LOGIN";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // button2
@@ -147,7 +125,7 @@
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.button2.Location = new System.Drawing.Point(33, 423);
+            this.button2.Location = new System.Drawing.Point(36, 350);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(216, 35);
             this.button2.TabIndex = 9;
@@ -157,22 +135,23 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(56, 487);
+            this.label5.Location = new System.Drawing.Point(85, 415);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(165, 17);
+            this.label5.Size = new System.Drawing.Size(124, 17);
             this.label5.TabIndex = 10;
-            this.label5.Text = "Already Have An Account";
+            this.label5.Text = "Dont have account";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.label6.Location = new System.Drawing.Point(86, 518);
+            this.label6.Location = new System.Drawing.Point(95, 445);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(97, 17);
+            this.label6.Size = new System.Drawing.Size(101, 17);
             this.label6.TabIndex = 11;
-            this.label6.Text = "back to LOGIN";
+            this.label6.Text = "Create Account";
             // 
             // frmRegister
             // 
@@ -185,8 +164,6 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.checkBxShowPas);
-            this.Controls.Add(this.textComPassword);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.textpassword);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textUsername);
@@ -195,7 +172,7 @@
             this.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(165)))), ((int)(((byte)(169)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmRegister";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -212,8 +189,6 @@
         private System.Windows.Forms.TextBox textUsername;
         private System.Windows.Forms.TextBox textpassword;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textComPassword;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.CheckBox checkBxShowPas;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
