@@ -21,5 +21,10 @@ namespace LOGIN
         {
 
         }
+
+        private void textComPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

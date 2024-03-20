@@ -111,6 +111,7 @@
             this.textComPassword.Name = "textComPassword";
             this.textComPassword.Size = new System.Drawing.Size(216, 28);
             this.textComPassword.TabIndex = 18;
+            this.textComPassword.TextChanged += new System.EventHandler(this.textComPassword_TextChanged);
             // 
             // label4
             // 

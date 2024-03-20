@@ -83,6 +83,7 @@
             this.textpassword.Name = "textpassword";
             this.textpassword.Size = new System.Drawing.Size(216, 28);
             this.textpassword.TabIndex = 4;
+            this.textpassword.TextChanged += new System.EventHandler(this.textpassword_TextChanged);
             // 
             // label3
             // 
@@ -152,6 +153,7 @@
             this.label6.Size = new System.Drawing.Size(101, 17);
             this.label6.TabIndex = 11;
             this.label6.Text = "Create Account";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // frmRegister
             // 
