@@ -47,9 +47,9 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.label1.Location = new System.Drawing.Point(30, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(155, 27);
+            this.label1.Size = new System.Drawing.Size(213, 27);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Get Started";
+            this.label1.Text = "INICIAR SESIÓN";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
@@ -57,9 +57,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(32, 107);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 17);
+            this.label2.Size = new System.Drawing.Size(128, 17);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Username";
+            this.label2.Text = "Nombre de Usuario";
             // 
             // textUsername
             // 
@@ -81,6 +81,7 @@
             this.textpassword.Location = new System.Drawing.Point(35, 202);
             this.textpassword.Multiline = true;
             this.textpassword.Name = "textpassword";
+            this.textpassword.PasswordChar = '•';
             this.textpassword.Size = new System.Drawing.Size(216, 28);
             this.textpassword.TabIndex = 4;
             this.textpassword.TextChanged += new System.EventHandler(this.textpassword_TextChanged);
@@ -90,21 +91,22 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(32, 182);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 17);
+            this.label3.Size = new System.Drawing.Size(77, 17);
             this.label3.TabIndex = 3;
-            this.label3.Text = "Password";
+            this.label3.Text = "Contraseña";
             // 
             // checkBxShowPas
             // 
             this.checkBxShowPas.AutoSize = true;
             this.checkBxShowPas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBxShowPas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBxShowPas.Location = new System.Drawing.Point(132, 236);
+            this.checkBxShowPas.Location = new System.Drawing.Point(109, 236);
             this.checkBxShowPas.Name = "checkBxShowPas";
-            this.checkBxShowPas.Size = new System.Drawing.Size(119, 21);
+            this.checkBxShowPas.Size = new System.Drawing.Size(145, 21);
             this.checkBxShowPas.TabIndex = 7;
-            this.checkBxShowPas.Text = "Show password";
+            this.checkBxShowPas.Text = "Mostrar Contraseña";
             this.checkBxShowPas.UseVisualStyleBackColor = true;
+            this.checkBxShowPas.CheckedChanged += new System.EventHandler(this.checkBxShowPas_CheckedChanged);
             // 
             // button1
             // 
@@ -117,7 +119,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(216, 35);
             this.button1.TabIndex = 8;
-            this.button1.Text = "LOGIN";
+            this.button1.Text = "INGRESAR";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -131,17 +133,18 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(216, 35);
             this.button2.TabIndex = 9;
-            this.button2.Text = "CLEAR";
+            this.button2.Text = "MENU PRINCIPAL";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(87, 397);
+            this.label5.Location = new System.Drawing.Point(75, 392);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(124, 17);
+            this.label5.Size = new System.Drawing.Size(145, 17);
             this.label5.TabIndex = 10;
-            this.label5.Text = "Dont have account";
+            this.label5.Text = "No tienes una cuenta?\r\n";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
@@ -149,11 +152,11 @@
             this.label6.AutoSize = true;
             this.label6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.label6.Location = new System.Drawing.Point(97, 427);
+            this.label6.Location = new System.Drawing.Point(97, 419);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(101, 17);
+            this.label6.Size = new System.Drawing.Size(87, 17);
             this.label6.TabIndex = 11;
-            this.label6.Text = "Create Account";
+            this.label6.Text = "Crear Cuenta";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // frmRegister
