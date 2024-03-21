@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace LOGIN
 {
@@ -16,7 +17,9 @@ namespace LOGIN
         {
             InitializeComponent();
         }
-
+        OleDbConnection con = new OleDbConnection("Provider=Microsoft.Jet.OLEDB:$:=;Data Source=db_users.mdb");
+        OleDbCommand cmd = new OleDbCommand();
+        OleDbDataAdapter da = new OleDbDataAdapter();
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -74,8 +77,7 @@ namespace LOGIN
 
         private void button2_Click(object sender, EventArgs e)
         {
-            // Este espacio es para ingresar a la página sin necesidad de iniciar sesión ni crear una cuenta
-            // Aquí deberías implementar la lógica para permitir el acceso a la página sin autenticación.
+            
         }
     }
 }

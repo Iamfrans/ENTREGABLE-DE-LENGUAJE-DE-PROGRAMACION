@@ -41,7 +41,24 @@ namespace LOGIN
             else if (textpassword.Text == textComPassword.Text)
             {
                 con.Open();
-                string register = "INSERT INTO tbl_users VALUES"(+)
+                string register = "INSERT INTO tbl_users VALUES ('" + textUsername + "','" + textpassword.Text + "')";
+                cmd = new OleDbCommand(register, con);
+                cmd.ExecuteNonQuery();
+                con.Close();
+
+                textUsername.Text = "";
+                textpassword.Text = "";
+                textComPassword.Text = "";
+
+                MessageBox.Show("your Account Has been Succesfully Cread", "Registration Succes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            else
+            {
+                MessageBox.Show("Passwords does not match, Please Re-Enter", "Registration Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textpassword.Text = "";
+                textComPassword.Text = "";
+                textpassword.Focus();
             }
         }
 
@@ -72,12 +89,17 @@ namespace LOGIN
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+            textUsername.Text = "";
+            textpassword.Text = "";
+            textComPassword.Text = "";
+            textUsername.Focus();
         }
 
         private void label6_Click(object sender, EventArgs e)
         {
             //este espacio es para ir al formulario Form1.cs
+            new frmRegister().Show();
+            this.Hide();
         }
     }
 }

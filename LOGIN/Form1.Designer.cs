@@ -133,7 +133,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(216, 35);
             this.button2.TabIndex = 9;
-            this.button2.Text = "MENU PRINCIPAL";
+            this.button2.Text = "LIMPIAR";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
