@@ -1,0 +1,7 @@
+E:\frans\Desktop\ENTREGABLE-DE-LENGUAJE-DE-PROGRAMACION\entregable\obj\Debug\net8.0-windows\entregable.frmRegistro.resources
+E:\frans\Desktop\ENTREGABLE-DE-LENGUAJE-DE-PROGRAMACION\entregable\obj\Debug\net8.0-windows\entregable.csproj.GenerateResource.cache
+E:\frans\Desktop\ENTREGABLE-DE-LENGUAJE-DE-PROGRAMACION\entregable\obj\Debug\net8.0-windows\entregable.GeneratedMSBuildEditorConfig.editorconfig
+E:\frans\Desktop\ENTREGABLE-DE-LENGUAJE-DE-PROGRAMACION\entregable\obj\Debug\net8.0-windows\entregable.AssemblyInfoInputs.cache
+E:\frans\Desktop\ENTREGABLE-DE-LENGUAJE-DE-PROGRAMACION\entregable\obj\Debug\net8.0-windows\entregable.AssemblyInfo.cs
+E:\frans\Desktop\ENTREGABLE-DE-LENGUAJE-DE-PROGRAMACION\entregable\obj\Debug\net8.0-windows\entregable.csproj.CoreCompileInputs.cache
+E:\frans\Desktop\ENTREGABLE-DE-LENGUAJE-DE-PROGRAMACION\entregable\obj\Debug\net8.0-windows\entregable.sourcelink.json
